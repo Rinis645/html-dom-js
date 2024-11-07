@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="my-text" />
+    <button id="my-button">Iesniegt</button>
+    <script>
+      //console.log("Rinalds");
+
+      const inputText = document.getElementById("my-text");
+      const myButton = document.getElementById("my-button");
+      console.log(inputText.value);
+
+      function printName(inputName) {
+        console.log(inputName);
+      }
+      printName("Elza");
+      myButton.addEventListener("click", handleButtonClick);
+
+      function handleButtonClick() {
+        console.log(inputText.value);
+      }
+    </script>
+  </body>
+</html>
